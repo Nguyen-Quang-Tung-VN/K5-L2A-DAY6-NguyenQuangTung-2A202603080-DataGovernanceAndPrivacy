@@ -1,6 +1,2 @@
 member,git_author_name,git_email,role,modules_files,commit_shas,evidence_note,presenter
-Member 1,,,Lead / Integrator,src/main.py; configs/,,,
-Member 2,,,Data & fixtures,fixtures/; tools/,,,
-Member 3,,,Core algorithm,src/pipeline.py,,,
-Member 4,,,QA / metric,tests/; reports/metrics_*.json,,,
-Member 5,,,Human review + report,reports/group_report.md; demo/,,,
+Nguyễn Quang Tùng,Nguyen-Quang-Tung-VN,nguyenquangtung753@gmail.com,"Lead / Full-stack Data Pipeline (Solo)","src/pipeline.py; configs/lab.yaml; tests/test_t02_poc.py; demo/DEMO_SLIDES.md; reports/","201199f, 59551c9, 7d2ac61, 60fe1cc, 228ade7, 615066a","Full pipeline implementation, multi-feature defect detection, failure mode handling, unit tests, human review audit log",yes
