@@ -26,6 +26,10 @@ from .metrics.tracks import get_track
 
 # ---------------------------------------------------------------- 01 load
 def load(ctx: RunContext) -> dict:
+    if ctx.track != "t02":
+        spec = get_track(ctx.track)
+        raise NotImplementedError(f"Track {ctx.track} ({spec.title}) is not implemented in this PoC (only t02)")
+
     manifest = ctx.input_dir / "manifest.csv"
     problems = verify_manifest(manifest) if manifest.exists() else [{"problem": "no_manifest"}]
     if problems:
